@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Flexbox {
+  background-color: rgb(242, 242, 242);
+  margin: 20px 0px 40px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  padding: 0 60px;
+  flex-direction: row;
+  /* height: 50vh; */
+}
+
+h2 {
+  font-family: "Big Shoulders Display" cursive;
+  font-weight: 700;
+  padding: 30px 0;
+  color: hsl(0, 0%, 95%);
+  margin-top: 20px;
+}
+.gta {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 10px;
+  /* margin-bottom: 5px; */
+  font-size: 14px;
+}
+.gta-h1:hover {
+  color: yellow;
+}
+
+.sedan,
+.luxury,
+.suv {
+  border: none;
+  padding: 30px 40px;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: start;
+}
+
+img {
+  width: 50px;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  padding-bottom: 1em;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.3em;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: start;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  text-align: start;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  /* border-top-left-radius: 10px; */
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: start;
+}
+
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 70px;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+.sedan button {
+  color: hsl(31, 77%, 52%);
+  border-radius: 50px;
+  border: none;
+  margin: 40px 0 10px 0;
+  padding: 10px 20px;
+  align-items: start;
+  cursor: pointer;
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+  border-radius: 50px;
+  border: none;
+  margin: 40px 0 10px 0;
+  /* margin: 0px 0 20px 0; */
+  padding: 10px 20px;
+  align-items: start;
+  cursor: pointer;
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+  margin: 20px 0 30px 0px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  /* align-items: start; */
+  /* margin: 10px 30px 40px; */
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+}
+
+/* GRID CSS */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+h3 {
+  font: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: left;
+  color: aliceblue;
+}
+grid-body {
+  background-color: black;
+  margin-top: 100px;
+}
+.wrapper {
+  background-color: black;
+  display: grid;
+
+  gap: 10px;
+  grid-template-areas:
+    "a a a b b"
+    "a a a b b"
+    "c c d d d"
+    "c c e e e";
+  height: 70vh;
+  width: 500px;
+  margin: auto;
+  padding: 50px;
+  padding-top: auto;
+}
+
+.item-1 {
+  background-color: hsl(6, 94%, 65%);
+  grid-area: a;
+}
+
+.item-2 {
+  background-color: hsl(36, 97%, 68%);
+  grid-area: b;
+}
+.item-3 {
+  background-color: hsl(156, 77%, 40%);
+  grid-area: c;
+}
+
+.item-4 {
+  background-color: hsl(186, 72%, 50%);
+  grid-area: d;
+}
+.item-5 {
+  background-color: hsl(186, 72%, 50%);
+  grid-area: e;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  background-position: center;
+  background-size: cover;
+}
+.contact-cn {
+  width: 350px;
+  height: 300px;
+  box-sizing: border-box;
+  background: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 3s;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 24px;
+  color: brown;
+}
+
+.contact-cn p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.contact-cn input[type="text"],
+input[type="email"] {
+  border: none;
+  width: 350px;
+  color: #fff;
+  border-bottom: 1px solid grey;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contact-cn input[type="button"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50px;
+}
+.contact-cn input {
+  width: 100%;
+  margin-bottom: 20px;
+}
